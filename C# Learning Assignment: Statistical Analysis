@@ -1,0 +1,129 @@
+
+using System;
+
+class Program {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter an array size");
+            int[] myArray = CreateArray(int.Parse(Console.ReadLine()));
+            Array.Sort(myArray); //the "easy" way.
+            //SortArray(myArray); The "hard" way.
+           /* Unhide to print sorted array.
+            * foreach (int n in myArray)
+            { Console.Write(n + ", "); }
+            Console.WriteLine("\n");*/
+            Console.WriteLine("The mean is {0}",FindMean(myArray));
+            Console.WriteLine("The median is {0}", FindMedian(myArray));
+            Console.WriteLine("The mode is {0}", FindMode(myArray));
+
+            Console.ReadKey();
+        }
+        /*Not required if we use array.Sort(myArray) above.
+         * static void SortArray(int[] unsortedArray) 
+        {
+            
+            for (int i = 0; i < unsortedArray.Length; i++)
+            {                
+                for (int j = 0; j < (unsortedArray.Length - 1 - i); j++)
+                {
+                   int temp = unsortedArray[j];
+                    if (unsortedArray[j] > unsortedArray[j + 1])
+                    {
+                        unsortedArray[j] = unsortedArray[j + 1];
+                        unsortedArray[j + 1] = temp;
+                    }
+                }
+            }
+        }*/
+        static int[] CreateArray(int arraySize)
+        {
+            int[] arrayValues = new int[arraySize];
+            Random random = new Random((int)DateTime.Now.Ticks);
+            for (int i = 0; i < arrayValues.Length; i++)
+            {
+                arrayValues[i] = random.Next(10000); //change back to 10000 after testing.
+            }
+            return arrayValues;
+        }
+
+        static double FindMean(int[] meanArray)
+        {
+            double meanSum=0;
+            for (int i = 0; i < meanArray.Length; i++)
+            {
+                meanSum += meanArray[i];
+            }
+            double mean = meanSum / meanArray.Length;
+            return mean;
+        }
+        static double FindMedian(int[] medianArray)
+        {
+            /*easier way*/
+            
+            int even = (medianArray.Length +1 )% 2;
+
+            return ((medianArray[(medianArray.Length/2)] + medianArray[((medianArray.Length/2)-even)])/2);
+            
+            /* the "hard" way
+            double median;
+            int half;
+            int even = medianArray.Length % 2;
+            if (even == 0)
+            {
+                half = medianArray.Length / 2;
+                median = (medianArray[half] + medianArray[half - 1]) / 2;
+            }
+            else
+            {
+                int middle = Convert.ToInt32(0.5 + (medianArray.Length / 2));
+                median = medianArray[middle-1];
+            }
+            return median;*/
+        }
+        static int FindMode(int[] modeArray)
+        {
+            //only calculates the first mode.
+            int mode = modeArray[0];
+            int maxCount = 1;
+            int count = 1;
+                 
+            for (int i = 1; i < modeArray.Length; i++)
+            {
+                if (modeArray[i] == modeArray[i - 1])
+                {
+                    ++count;                   
+                }
+                else
+                {
+                    count = 1;
+                }
+                if (count > maxCount)
+                {
+                    mode = modeArray[i];
+                    maxCount = count;                 
+                }
+            }
+            /* The "hard" way (iterating each number from 0 - 10000)
+            for (int i = 0; i <= modeArray[(modeArray.Length-1)]; i++)
+            { 
+                int count = 0;
+                //Console.Write("Bin {0}: ", i);
+                for (int j = 0; j < modeArray.Length; j++)
+                {
+
+                    if (modeArray[j] == i)
+                    {
+                        count++;
+                    }
+                }
+                //Console.Write(" ({0})\n", count);
+                if (count>maxCount)
+                {
+                    maxCount = count;
+                    mode = i;
+                }
+            }*/
+            return mode;
+        }
+    
+}
