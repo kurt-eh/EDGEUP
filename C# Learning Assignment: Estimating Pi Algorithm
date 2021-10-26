@@ -1,0 +1,50 @@
+using System;
+
+class Program 
+{
+  static void Main(string[] args)
+  {
+    {
+        PiCalc();
+        BonusQuestion();
+
+        Console.ReadKey();
+    }
+    static void PiCalc()
+    {
+        Console.WriteLine("Please enter how many terms you want in the equation:");
+        int terms = int.Parse(Console.ReadLine());
+        double temp = 0;
+        double piEst = 0;
+        for (int n = 0; n <= terms; n++)
+        {
+            temp = 4 * ((Math.Pow((-1), n)) / ((2 * n) + 1));
+            piEst += temp;
+        }
+        Console.WriteLine("The value of Pi to {0} terms is {1}", terms, piEst);
+    }
+    static void BonusQuestion()
+    {
+      bool same = false;
+      double piCurrent = 0;
+      double temp = 0;
+      double lastPi = 0;
+      int n = 0;
+      do
+      {
+          lastPi = piCurrent;
+          temp = 4 * ((Math.Pow((-1), n)) / ((2 * n) + 1));
+          piCurrent += temp;
+          if (Math.Abs((piCurrent - lastPi)) < 0.0000001)
+          {
+              same = true;
+              Console.WriteLine("It took {0} iterations to converge within 0.0000001.", n);
+          }
+          n++;
+      } while (same == false);    
+    }
+  }
+}
+
+
+
