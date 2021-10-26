@@ -1,0 +1,7 @@
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\bin\Debug\LA4-3-1_Contact_List.exe.config
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\bin\Debug\LA4-3-1_Contact_List.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\bin\Debug\LA4-3-1_Contact_List.pdb
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\obj\Debug\LA4-3-1_Contact_List.csproj.AssemblyReference.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\obj\Debug\LA4-3-1_Contact_List.csproj.CoreCompileInputs.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\obj\Debug\LA4-3-1_Contact_List.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-25-21_lecture\LA4-3-1_Contact_List\LA4-3-1_Contact_List\obj\Debug\LA4-3-1_Contact_List.pdb
