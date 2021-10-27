@@ -13,8 +13,7 @@ namespace LA4_3_1_Contact_List
 
         public Contact() //base constructor
         {
-            this.contactName = "name";
-            this.contactNumbers.Add("123467890");
+        
         }
 
         public Contact(string name, string number ) //build constructor w/ arguements from main.
