@@ -1,0 +1,7 @@
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\obj\Debug\MockBuster.csproj.AssemblyReference.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\obj\Debug\MockBuster.csproj.CoreCompileInputs.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\bin\Debug\MockBuster.exe.config
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\bin\Debug\MockBuster.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\bin\Debug\MockBuster.pdb
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\obj\Debug\MockBuster.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-3\GitLA4-4-1\MockBuster\MockBuster\obj\Debug\MockBuster.pdb
