@@ -1,0 +1,7 @@
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\bin\Debug\PrivateContact.exe.config
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\bin\Debug\PrivateContact.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\bin\Debug\PrivateContact.pdb
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\obj\Debug\PrivateContact.csproj.AssemblyReference.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\obj\Debug\PrivateContact.csproj.CoreCompileInputs.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\obj\Debug\PrivateContact.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA_Private_Contact\PrivateContact\PrivateContact\obj\Debug\PrivateContact.pdb
