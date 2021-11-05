@@ -5,3 +5,10 @@ C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Pro
 C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-27-21_lecture\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.csproj.CoreCompileInputs.cache
 C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-27-21_lecture\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.exe
 C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\10-27-21_lecture\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.pdb
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\bin\Debug\LA4-4-2-DicePool.exe.config
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\bin\Debug\LA4-4-2-DicePool.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\bin\Debug\LA4-4-2-DicePool.pdb
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.csproj.AssemblyReference.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.csproj.CoreCompileInputs.cache
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.exe
+C:\Users\kurte\OneDrive\edgeUp\SODV9104_VB_Projects\Module 4 Object Oriented Programming\LearningActivities\LA4-4-2\LA4-4-2-DicePool\LA4-4-2-DicePool\obj\Debug\LA4-4-2-DicePool.pdb

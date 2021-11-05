@@ -16,14 +16,14 @@ Create a class representing a pool of dice. This class should have functions to 
     class Program
     {
         static ManyDice die = new ManyDice();
+        static Random random = new Random((int)DateTime.Now.Ticks);//bouncing the random around to create timing delays to increase randomness (my pc was running all the random values in the same ms).
         static void Main(string[] args)
         {
             Console.WriteLine("Let's roll some dice!");
             Console.WriteLine("Please enter the number of dice you want to roll in the following format:");
             Console.WriteLine("xdy, where \"x\" is the number of dice you want and \"y\" is how many sides they have.");
             Console.WriteLine("Example: 2d6 is 2 6-sided dice. Perfect for playing Catan! (or Monopoly)");
-            Console.WriteLine("Please limit your dice to d4, d6, d8, d10, d12, d20");
-            
+            Console.WriteLine("There are six kinds of dice you can enter: \nd4, d6, d8, d10, d12, d20");            
             PlayDice();
             Console.ReadKey();
         }
@@ -37,7 +37,6 @@ Create a class representing a pool of dice. This class should have functions to 
             Console.WriteLine("Type \"commands\" or press enter on a blank line to see the command list again.");
             Console.WriteLine("Type \"exit\" to exit program\n");
         }
-
         static void PlayDice()
         {
             bool firstTime = true; 
@@ -48,14 +47,13 @@ Create a class representing a pool of dice. This class should have functions to 
             string[] words = null;
             string command = null;
             bool commandError;
-            do 
+            do //the entire loop
             {
-                
-                do
+                do // sub-loop to ensure commands will work.
                 {
                     commandError = false;
                     PrintCommands();
-                    if (firstTime == false)
+                    if (firstTime == false) //reminds user of the last command they entered.
                     {
                         switch (command.ToLower())
                         {
@@ -67,85 +65,82 @@ Create a class representing a pool of dice. This class should have functions to 
                             case "roll":
                             case "clear":
                             case "commands":
+                            case "you pressed <enter>.":
                                 Console.WriteLine("Last Command: {0}",command);
-
                                 break;
                         }
                     }
                     firstTime = false;
                     Console.WriteLine("Enter your command:");
                     option = CheckCommand();
-                    if (option == "")
+                    if (option == "") //if the user hits <enter> without any commands.
                     {
                         commandError = true;
+                        command = "You pressed <enter>.";
+                        Console.Clear();
                         continue;
                     }
                     words = option.Split(' ');
                     command = words[0];
                     if (words.Length > 1)
                     {
-                    xDy = words[1].Split('d');                    
+                    xDy = words[1].Split('d');   // creates # of dice and # of sides and makes sure they are ints.               
                         bool check = int.TryParse(xDy[0], out numberOfDice);
                         if (check == false)
                         {
                             commandError = true;
                         }
-                        check = int.TryParse(xDy[1], out numberOfSides);
+                        check = int.TryParse(xDy[1], out numberOfSides); 
                         if (check == false)
                         {
                             commandError = true;
                         }
                         else
                         {
-                            numberOfSides = CheckDice(numberOfSides);
+                            numberOfSides = CheckDice(numberOfSides);//limits entries to the 6 "standard" dice types.
                         }
-                        if (xDy[1] == "" || xDy[0] == "")
+                        if (xDy[1] == "" || xDy[0] == "")//checks for accidental <enter>
                         {
-                            commandError = true;
+                            commandError = true; 
                         }
                     }
                     if (commandError == true)
                     {
                         Console.WriteLine("I think you had a typo. \nPlease enter numbers in the format: <number of dice>d<number of sides> (ie: 2d6 for 2 6-sided dice)");
                     }
-                //Console.Clear();
-                      
-                } while (commandError == true);
+                } while (commandError == true); //asks user to re-enter command if there is an error.
 
-                if (command == "exit") 
+                if (command == "exit")  //exit program.
                 {
                     Console.WriteLine("Thank you, play again, soon!");
                     break;
                 }
-                else if (command == "add") 
+                else if (command == "add") //adds one or more dice of a given type to the bag.
                 {
                     die.AddDie(numberOfDice, numberOfSides);
                     
                 }
-                else if (command == "remove")
+                else if (command == "remove") //removes one or more dice of a given type from the bag.
                 {                    
                     die.Remove(numberOfDice, numberOfSides);
                 }
-                else if (command == "dice")
+                else if (command == "dice") //display all of the dice in the bag
                 {
                     die.Display();
                 }
-                else if (command == "roll")
+                else if (command == "roll") //rolls all dice.
                 {
-                    die.ReRollDice();
+                    die.ReRollDice(random);
                 }
-                else if (command == "clear")
+                else if (command == "clear") //removes all dice from the bag.
                 {
                     Console.WriteLine("All dice have been removed from the bag. \nPlease add more dice.");
                     die.Clear();
                 }
-                else
-                {
-                    PrintCommands();
-                }
+               
             } while (true);            
         }
-        static int CheckDice(int sides)
+        static int CheckDice(int sides) //function limits number of sides to the standard dice set.
         {
             List<int> check = new List<int> {4,6,8,10,12,20};
             while (!check.Contains(sides))
@@ -155,7 +150,7 @@ Create a class representing a pool of dice. This class should have functions to 
             }
                return sides;            
         }
-        static string CheckCommand()
+        static string CheckCommand() //user enters a command, and program checks entered command against the coded options.
         {
             string instructions = Console.ReadLine();
             instructions = instructions.ToLower().Trim();
@@ -164,15 +159,13 @@ Create a class representing a pool of dice. This class should have functions to 
             List<string> check = new List<string> { "add", "remove", "dice", "roll","clear", "commands", "", "exit" };
             while (!check.Contains(words[0]))
             {
-                Console.WriteLine("Command not recognized.\nPlease enter \"add xdy\", \"remove xdy\", \"dice\", \"roll\",\"clear\", or \"exit\"");
+                Console.WriteLine("Command not recognized.\nPlease enter \"add xdy\", \"remove xdy\", \"dice\", \"roll\",\"clear\", or \"exit\""); //reminds user what the commands are.
                 instructions = Console.ReadLine(); 
                 instructions = instructions.ToLower().Trim();
                 words = instructions.Split(' ');
                 test = words[0];
             }
             return instructions;
-        }
-
-        
-    }
+        }        
+    }    
 }
